@@ -1,0 +1,11 @@
+[unit]
+Description = Backend service
+
+[Service]
+user = expense
+Environment=DB_HOST="mysql.kommanuthala.store"
+ExecStart=/bin/node /app/index.js
+SyslogIdentifier=backend
+
+[Install]
+WantedBy=multi-user.target
