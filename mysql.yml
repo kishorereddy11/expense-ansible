@@ -27,7 +27,7 @@
   - name: connect to mysql mysql-server
     community.mysql.mysql_info: 
       login_user: root
-      login_password: {{ mysql_password }}
+      login_password: "{{ mysql_password }}"
       login_host: mysql.kommanuthala.store
     register: mysql_info
     ignore_errors: true
