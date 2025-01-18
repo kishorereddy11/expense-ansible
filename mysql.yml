@@ -19,8 +19,8 @@
       login_user: root
       login_password: ExpenseApp@1
       login_host: mysql.kommanuthala.store
-      register: mysql_info
-  
+    register: mysql_info
+
   - name: print the output
     ansible.builtin.debug:
       msg: "MYSQL INFO: {{ mysql_info }}"
