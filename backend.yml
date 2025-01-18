@@ -13,7 +13,7 @@
     ansible.builtin.package:
       name: "{{ item }}"
       state: present
-      loop:
+    loop:
       - nodejs
       - mysql
 
